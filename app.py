@@ -10,9 +10,9 @@ import plotly.graph_objects as go
 from dash.dependencies import Input, Output, State
 from scipy.spatial.distance import cdist
 
-CROP_IMG_PATH = r'C:\Users\abarn\Downloads\crop\crops'
-DATA_PATH = r'C:\Users\abarn\Downloads\crop\Crop_recommendation.csv'
-TRAINED_MODEL_PATH = r'C:\Users\abarn\Downloads\crop\KNN_model_crop_prediction.pkl'
+CROP_IMG_PATH = 'crops'
+DATA_PATH = 'Crop_recommendation.csv'
+TRAINED_MODEL_PATH = 'KNN_model_crop_prediction.pkl'
 
 crop_img_files = [os.path.join(CROP_IMG_PATH, f) for f in os.listdir(CROP_IMG_PATH)]
 
